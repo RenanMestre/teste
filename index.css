@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.btn-contato button {
+    color: white;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.interface .logo img{
+    max-width: 250px;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(203, 206, 12);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin: 65px 0 10px 0;
+}
+
+h2.titulo span {
+    color: rgb(238, 255, 0);
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(134, 132, 132);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.10);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-abrir-menu i{
+    color: rgb(238, 255, 0);
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+}
+
+.menu-mobile .btn-fechar i{
+    color: aqua;
+    font-size: 30px;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: rgb(238, 255, 0);
+    color: black;
+}
+
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.747);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgb(236, 253, 0);
+    transform: scale(1.05);
+}
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .text-topo-site h1 span {
+    color: rgb(238, 255, 0);
+    font-size: 42px;
+}
+
+.topo-do-site .text-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 0px 15px rgb(145, 132, 41));
+    color: white;
+}
+
+.especialidades .interface .flex .especialidades-box .youtube .certificados p{
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.especialidades .interface .flex .especialidades-box .youtube .certificados a{
+    color: white;
+    text-align: center;
+    margin: 0 0 0;
+    text-decoration: none;
+}
+
+.especialidades .interface .flex .especialidades-box .youtube i{
+    color: rgb(255, 0, 0);
+}
+
+.especialidades .interface .flex .especialidades-box .youtube video{
+    margin: 15px 0px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.especialidades .interface .flex .especialidades-box .certificados p{
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.especialidades .interface .flex .especialidades-box .youtube .certificados button{
+    background-color: red;
+    font-size: 25px;
+    margin: auto;
+    border-radius: 15px;
+    width: 25%;
+    height: 25%;
+}
+
+.certificados button:hover {
+    box-shadow: 0px 0px 8px white;
+    transform: scale(1.05);
+}
+
+.especialidades .interface .flex .especialidades-box .cursos i{
+    color: rgb(255, 0, 242);
+}
+
+.especialidades .interface .flex .especialidades-box .certificados  img{
+    height: 450px;
+    margin: 25px 50px 15px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 0px 15px rgb(252, 5, 252));
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.253);
+}
+
+.especialidades .especialidades-seguranca i {
+    font-size: 70px;
+    color: rgb(47, 0, 255);
+}
+
+.especialidades .especialidades-informatica i {
+    font-size: 70px;
+    color: rgb(57, 63, 63);
+}
+
+.especialidades .especialidades-eletro i {
+    font-size: 70px;
+    color: rgb(208, 255, 0);
+}
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: rgb(229, 255, 0);
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.253);
+}
+
+.especialidades .especialidades-box span {
+    font-size: 70px;
+    color: rgb(238, 255, 0);
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.sobre {
+    padding: 50px 4%;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: rgb(255, 251, 0);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .txt-sobre .formacoes button {
+    padding: 15px 15px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(12, 206, 60);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    color: white;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    border: none;
+    background-color: rgb(229, 255, 0);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: .2s;
+}
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(0, 171, 250, 0.418);
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+section.sobre .flex .img-sobre img{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 60px;
+    border-radius: 15px;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.171);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: rgb(255, 251, 0);
+}
+
+.center {
+    text-align: center;
+}
+
+.especialidades .especialidades-box P {
+    text-align: left;
+}
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(212, 250, 0, 0.418);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid rgb(251, 255, 0);
+}
+
+footer .line-footer p i {
+    color: rgb(238, 255, 0);
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+    margin: 5px;
+}
+
+.logo-footer img {
+    max-width: auto;
+    height: 100px;
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .menu.desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+        height: 100%;
+        margin: 0 0 15px;
+    }
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 15px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30%;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    footer img {
+        height: 100%;
+        width: 35%;
+    }
+
+    .topo-do-site .text-topo-site h1 span {
+        font-size: 38px;
+    }
+
+    .interface .logo img{
+        height: 200px;
+        max-width: auto;
+        margin: 0 25% 1%;
+    }
+
+    .especialidades .interface .flex .especialidades-box .especialidades-seguranca .certificados  img{
+        height: 250%;
+        margin: 25px 25px 15px;
+    }
+    
+    .especialidades .interface .flex .especialidades-box .certificados  img{
+        height: 250%;
+        width: 75%;
+        margin: 25px 25px 15px;
+    }
+
+    .especialidades .interface .flex .especialidades-box .youtube .certificados button{
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
